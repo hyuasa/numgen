@@ -8,6 +8,7 @@ function doLoto () {
         basic.clearScreen()
         i += 1
     }
+    basic.pause(500)
     doReset()
 }
 function doInit () {
@@ -46,9 +47,9 @@ input.onButtonPressed(Button.A, function () {
     doLoto()
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showString("m")
+    basic.showString("M")
     max = 31
-    count = 4
+    count = 5
     basic.clearScreen()
     doLoto()
 })
